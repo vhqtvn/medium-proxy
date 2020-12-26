@@ -1,0 +1,50 @@
+<!doctype html>
+<html style="min-height:auto">
+
+<head>
+    <title>chrome-extension-template</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="popup.js"></script>
+    <style>
+        body {
+            display: -ms-flexbox;
+            display: -webkit-box;
+            display: flex;
+            -ms-flex-align: center;
+            -ms-flex-pack: center;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: #f5f5f5;
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+</body>
+
+<body>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="enabled">Enabled</span>
+          </div>
+        <input type="text" class="form-control" id="redirect" placeholder="Example: md.vhn.vn" value="md.vhn.vn" />
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary btn-clear" type="button">Clear</button>
+            <button class="btn btn-outline-primary btn-save" type="button">Enable</button>
+        </div>
+    </div>
+</body>
+
+</html>
