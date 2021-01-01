@@ -23,7 +23,7 @@ function enableRedirect(enable) {
     } else {
         $('#redirect').val('');
         $('#enabled').css('display', 'none');
-        localStorage.setItem('redirects', '');
+        localStorage.setItem('redirect', '');
     }
 }
 
@@ -33,6 +33,6 @@ $(document).ready(function () {
         enableRedirect(false);
     })
     $('.btn-save').on('click', function () {
-        enableRedirect($('#redirect').val().trim());
+        enableRedirect($('#redirect').val().trim() || "md.vhn.vn");
     })
 });
